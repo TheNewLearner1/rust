@@ -1,9 +1,10 @@
 fn main() {
-    let mut x: i64= 1;
-    while x < 100000{
+    let mut x: i64 = 1;
+    while x < 100000 {
         x += 1;
-        println!("{}",x)
+        println!("{}", x)
     }
     println!("complete");
-    
+    println!("hi");
 }
+

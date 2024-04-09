@@ -6,5 +6,6 @@ fn main() {
     let tup: (i32, i32, i32) = (1,2,3);
     let (x,y,z) = tup;
     let xo = tup.0;
+    //why
     println!("the valeu of y is {xo}");
 } 

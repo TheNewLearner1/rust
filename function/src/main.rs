@@ -4,13 +4,14 @@ fn main() {
     for i in 1..100_000_000 {
         listoo.push(i);
     }
-    let target: i32 = 43;
+    let target: i32 = 1;
     let mut x: i32 = 0;
     while x < 9 {
         x += 1;
     }
     let mut right: i32 = x;
     let mut left: i32 = 0;
+    println!("going to search");
     let index: i32 = binary_search(&listoo, left, right, target);
     println!("index {}", index);
 }

@@ -3,9 +3,8 @@ fn main() {
     if _x == 10 {
         println!("{_x}");
     }
-    let tup: (i32, i32, i32) = (1,2,3);
-    let (x,y,z) = tup;
+    let tup: (i32, i32, i32) = (1, 2, 3);
     let xo = tup.0;
     //why
-    println!("the valeu of y is {xo}");
-} 
+    println!("the value of y is {xo}");
+}

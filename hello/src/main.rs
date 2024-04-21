@@ -5,6 +5,7 @@ fn main() {
     }
     let tup: (i32, i32, i32) = (1, 2, 3);
     let xo = tup.0;
+    let yo = tup.1;
     //why
-    println!("the value of y is {xo}");
+    println!("the value of y is {xo}, x is {yo}");
 }

@@ -26,5 +26,6 @@ fn binary_search(listo: &[i32], mut left: i32, mut right: i32, target: i32) -> i
     } else {
         right = mid as i32 - 1;
     }
+    println!("going to binary search")
     binary_search(listo, left, right, target)
 }

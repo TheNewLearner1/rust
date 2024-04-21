@@ -1,1 +1,1 @@
-/workspaces/rust/function/target/debug/function: /workspaces/rust/function/src/main.rs
+/home/omnia/projects/rust/function/target/debug/function: /home/omnia/projects/rust/function/src/main.rs

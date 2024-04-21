@@ -4,7 +4,7 @@ fn main() {
     for i in 1..100_000_000 {
         listoo.push(i);
     }
-    let target: i32 = 1;
+    let target: i32 = 5;
     let mut x: i32 = 0;
     while x < 9 {
         x += 1;
@@ -23,9 +23,9 @@ fn binary_search(listo: &[i32], mut left: i32, mut right: i32, target: i32) -> i
     if listo[mid] == target {
         return mid as i32;
     } else if listo[mid] < target {
-        left = mid as i32 + 1;
+        left = mid as i32;
     } else {
-        right = mid as i32 - 1;
+        right = mid as i32;
     }
     binary_search(listo, left, right, target)
 }

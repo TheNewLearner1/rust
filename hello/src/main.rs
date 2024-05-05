@@ -12,12 +12,14 @@ fn main() {
         age: i16,
         gender: String,
         iq: i32,
+        fat: bool,
     }
     let sanjok = Person {
         name: String::from("Sanjok"),
         age: 16,
         gender: String::from("male"),
         iq: 78,
+        fat: true
     };
     println!("the value of y is {xo}, x is {yo}");
     let str11 = String::from("hilol");
@@ -26,6 +28,7 @@ fn main() {
     println!("lol");
     println!("word {str11}, len {m} ");
 }
+    
 fn cal_len(x: &str) -> usize {
     x.len()
 }

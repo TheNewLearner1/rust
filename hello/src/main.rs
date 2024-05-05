@@ -23,6 +23,7 @@ fn main() {
     let str11 = String::from("hilol");
     let m = cal_len(&str11);
     println!("fuck you");
+    println!("lol");
     println!("word {str11}, len {m} ");
 }
 fn cal_len(x: &str) -> usize {

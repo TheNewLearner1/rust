@@ -6,7 +6,7 @@ fn main() {
     let tup: (i32, i32, i32) = (1, 2, 3);
     let xo = tup.0;
     let yo = tup.1;
-    let x = [1,2,3];
+    let x = [1, 2, 3];
     //why
     struct Person {
         name: String,
@@ -20,16 +20,18 @@ fn main() {
         age: 16,
         gender: String::from("male"),
         iq: 78,
-        fat: true
+        fat: true,
     };
     println!("the value of y is {xo}, x is {yo}");
     let str11 = String::from("hilol");
     let m = cal_len(&str11);
-    println!("fuck you");
+    if sanjok.fat == true {
+        println!("fatty")
+    }
     println!("lol");
     println!("word {str11}, len {m} ");
 }
-    
+
 fn cal_len(x: &str) -> usize {
     x.len()
 }

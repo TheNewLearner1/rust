@@ -6,7 +6,7 @@ fn main() {
     let mut value = listo[complete];
     while complete <= max_lenth {
         while left < complete {
-        left = complete;
+            left = complete;
             if listo[left] < value {
                 value = listo[left];
             }

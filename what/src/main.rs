@@ -14,7 +14,10 @@ fn main() {
         }
         listo[complete] = value;
         complete += 1;
-        value = 100000;
+        if complete > max_lenth {
+            break
+        }
+        value = listo[complete];
     }
     for text in listo {
         print!("{text}, ");

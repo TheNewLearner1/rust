@@ -17,10 +17,10 @@ fn main() {
             left += 1;
         }
         complete += 1;
-        listo[complete] = value;
         if complete > max_lenth {
             break;
         }
+        listo[complete] = value;
         value = listo[complete];
     }
     for text in listo {

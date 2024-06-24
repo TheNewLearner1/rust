@@ -16,8 +16,8 @@ fn main() {
             }
             left += 1;
         }
-        listo[complete] = value;
         complete += 1;
+        listo[complete] = value;
         if complete > max_lenth {
             break;
         }

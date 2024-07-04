@@ -6,7 +6,10 @@ fn main() {
         mid: i32,
         frequency: i32,
     }
-    let mut iternation: String::new();
+
+    println!(" number of iternation ");
+
+    let mut iternation = String::new();
     stdin().read_line(&mut iternation).unwrap();
     println!("iternation {iternation} ");
 }

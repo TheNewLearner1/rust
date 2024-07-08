@@ -1,24 +1,37 @@
-use std::io::stdin;
+use std::io::{self, Write};
+
 fn main() {
-    struct value {
+    struct Value {
         first: i32,
         last: i32,
         mid: i32,
         frequency: i32,
     }
 
-    println!(" number of iternation ");
-    let mut iternation = String::new();
-    stdin().read_line(&mut iternation).unwrap();
-    println!("start point");
-    iternation = iternation.to_string();
-    let mut point = String::new();
-    stdin().read_line(&mut iternation).unwrap();
+    println!("Number of iterations:");
+    let mut input = String::new();
+    io::stdin()
+        .read_line(&mut input)
+        .expect("Failed to read line");
+    let iteration: i32 = input.trim().parse().expect("Please enter a valid number");
 
-    println!("difference ");
-    let mut dif = String::new();
-    stdin().read_line(&mut iternation).unwrap();
+    println!("Start point:");
+    input.clear();
+    io::stdin()
+        .read_line(&mut input)
+        .expect("Failed to read line");
+    let point: i32 = input.trim().parse().expect("Please enter a valid number");
+
+    println!("Difference:");
+    input.clear();
+    io::stdin()
+        .read_line(&mut input)
+        .expect("Failed to read line");
+    let dif: i32 = input.trim().parse().expect("Please enter a valid number");
+
     let mut x = 1;
-    while x <= iternation {}
+    while x <= iteration {
+
+    }
 }
 fn mean_deviation() {}

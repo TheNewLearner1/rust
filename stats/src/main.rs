@@ -20,7 +20,7 @@ fn main() {
     io::stdin()
         .read_line(&mut input)
         .expect("Failed to read line");
-    let point: i32 = input.trim().parse().expect("Please enter a valid number");
+    let mut point: i32 = input.trim().parse().expect("Please enter a valid number");
 
     println!("Difference:");
     input.clear();
@@ -28,10 +28,21 @@ fn main() {
         .read_line(&mut input)
         .expect("Failed to read line");
     let dif: i32 = input.trim().parse().expect("Please enter a valid number");
-
     let mut x = 1;
+    let mut first: Vec<i32> = Vec::new();
+    let mut second: Vec<i32> = Vec::new();
+    let mut frequency: Vec<i32> = Vec::new();
+    input.clear();
+    let mut value: i32;
     while x <= iteration {
-
+        println!("frequency please");
+        io::stdin().read_line(&mut input).expect("frequency ");
+        value = input.trim().parse().expect("integer please");
+        frequency.push(value);
+        first.push(point);
+        point += dif;
+        second.push(point);
+        x += 1;
     }
 }
 fn mean_deviation() {}

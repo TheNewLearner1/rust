@@ -1,5 +1,4 @@
 use std::io::{self, Write};
-
 fn main() {
     struct Value {
         first: i32,
@@ -43,6 +42,34 @@ fn main() {
         point += dif;
         second.push(point);
         x += 1;
+        median(&mut first, &mut second, &mut frequency);
     }
 }
-fn mean_deviation() {}
+fn median(first: &mut Vec<i32>, second: &mut Vec<i32>, frequency: &mut Vec<i32>) -> Option<f64> {
+    let total_count: i32 = frequency.iter().sum();
+    let mid_point = (total_count + 1) / 2;
+
+    let mut cumulative_freq = 0;
+    let mut median_index = 0;
+
+    for (i, &freq) in frequency.iter().enumerate() {
+        cumulative_freq += freq;
+        if cumulative_freq >= mid_point {
+            median_index = i;
+            break;
+        }
+    }
+
+    if total_count % 2 == 1 {
+        // Odd number of elements
+        Some(first[median_index] as f64)
+    } else {
+        // Even number of elements
+        let next_index = median_index + 1;
+        if next_index < first.len() {
+            Some((first[median_index] as f64 + first[next_index] as f64) / 2.0)
+        } else {
+            None // Error case: not enough elements
+        }
+    }
+}
